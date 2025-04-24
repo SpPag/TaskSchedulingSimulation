@@ -6,8 +6,9 @@ function scheduleTasks(tasks) {
         queuedAt: Date.now()
     }));
     const interval = setInterval(() => {
+        // Check if all tasks have been executed
         if (taskQueue.length === 0) {
-            clearInterval(interval);
+            clearInterval(interval); // Stop setInterval's execution
             console.log("✅ All tasks have been executed.");
             return;
         }
@@ -29,12 +30,12 @@ function scheduleTasks(tasks) {
         const index = taskQueue.findIndex(task => task.id === nextTask.id);
         if (index !== -1)
             taskQueue.splice(index, 1);
-    }, 10);
+    }, 10); // Run every 10ms
 }
 // Example usage
 const tasks = [
     [1, 5],
     [2, 15],
-    [3, 8]
+    [3, 68]
 ];
 scheduleTasks(tasks);
