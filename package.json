@@ -1,0 +1,14 @@
+{
+  "name": "1st-test-folder",
+  "version": "1.0.0",
+  "main": "copy-assets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && node copy-assets.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

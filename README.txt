@@ -1,4 +1,3 @@
-# TaskSchedulingSimulation
 Small script that simulates the following behavior:
 
 	It needs to accept an input array of tasks to be executed (example: tasks = [[1, 5], [2, 15], [3, 8]]). The first value in each inner array is the taskID and the second the task's execution time.
